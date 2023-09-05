@@ -6,11 +6,13 @@ public class Library {
 
     int total = 1;
     int count = 1;
-    String[] List = new String[total];
+    String[] List;
 
     public Library(int total)
     {
+        
         this.total = total;
+        List = new String[total];
     }
 
     public void add(String string) {
@@ -22,7 +24,7 @@ public class Library {
 
     public boolean find(String string) {
         
-        for(int i = 0; i<3 ; i++)
+        for(int i = 0; i<total ; i++)
         {
             if(List[i].equals(string))
                 return true;
@@ -33,10 +35,10 @@ public class Library {
 
     public void delete(String string) {
         
-        for(int i = 0; i<3 ; i++)
+        for(int i = 0; i<total ; i++)
         {
             if(List[i].equals(string))
-                List[i] = "\0";
+                List[i] = "";
         }
     }
 
