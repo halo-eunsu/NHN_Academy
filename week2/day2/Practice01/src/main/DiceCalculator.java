@@ -3,11 +3,7 @@ package main;
 public class DiceCalculator {
 
     public static double addDice(Dice first, Dice second) {
-        
-        
-        
-        
-
+    
         return first.getNumber() + second.getNumber();
     }
 

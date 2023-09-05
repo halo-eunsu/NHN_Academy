@@ -1,6 +1,6 @@
-package Test;
+package test;
 import main.Dice;
-import main.DiceCalculator;Main
+import main.DiceCalculator;
 
 
 /**
@@ -19,7 +19,6 @@ public class DiceTest {
         Dice second = new Dice(random2);
 
         System.out.println("주사위 합 = " + DiceCalculator.addDice(first, second));
-        assert 
         System.out.println("주사위 차 = " + DiceCalculator.subDice(first, second));
         System.out.println("주사위 곱 = " + DiceCalculator.mulDice(first, second));
         System.out.println("주사위 몫 = " + DiceCalculator.divDice(first, second));
