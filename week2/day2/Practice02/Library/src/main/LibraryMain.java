@@ -1,6 +1,5 @@
-package test;
+package main;
 
-import main.*;
 
 public class LibraryMain {
     private static final String NEGATIVE_LIBRARY_MESSAGE = "음수로는 도서관을 생성할 수 없습니다.";
@@ -32,6 +31,7 @@ public class LibraryMain {
         library.add("해리포터");
         library.add("어린왕자");
         library.add("샬롯의 거미줄");
+        //어디서부터 잘못인지 분석
 
         assert 3 == library.getTotalBookCount();
     }
