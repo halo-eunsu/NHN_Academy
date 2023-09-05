@@ -1,34 +1,33 @@
 package main;
 
-
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class Library {
 
     int total = 1;
     int count = 1;
-    String[] List;
+    List<String> BookList = new ArrayList<String>();
 
     public Library(int total)
     {
         
         this.total = total;
-        List = new String[total];
+        BookList[total];
     }
 
     public void add(String string) {
 
-        List[count-1] = string;
+        BookList.add(string);
         this.count += 1;
 
     }
 
     public boolean find(String string) {
         
-        for(int i = 0; i<total ; i++)
+        for(int i = 0; i<3 ; i++)
         {
-            if(List[i].equals(string))
+            if(BookList[i].equals(string))
                 return true;
         }
 
@@ -37,10 +36,10 @@ public class Library {
 
     public void delete(String string) {
         
-        for(int i = 0; i<total ; i++)
+        for(int i = 0; i<3 ; i++)
         {
-            if(List[i].equals(string))
-                List[i] = "";
+            if(BookList[i].equals(string))
+                BookList[i] = "\0";
         }
     }
 
