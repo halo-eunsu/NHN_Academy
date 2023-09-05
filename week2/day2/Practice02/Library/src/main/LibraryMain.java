@@ -1,4 +1,4 @@
-
+package main;
 
 public class LibraryMain {
     private static final String NEGATIVE_LIBRARY_MESSAGE = "음수로는 도서관을 생성할 수 없습니다.";
