@@ -7,11 +7,12 @@ public class LibraryMain {
     private static final String DELETE_NOT_EXIST_BOOK_MESSAGE = "도서관에 존재하지 않는 책은 삭제할 수 없습니다.";
 
     public static void main(String[] args) {
-        try {
-            new Library(-1);
-        } catch (IllegalArgumentException e) {
-            assert e.getMessage().equals(NEGATIVE_LIBRARY_MESSAGE);
-        }
+        
+        
+        negativeLibrary();
+        
+        
+     
 
         Library library = new Library(5);
 
@@ -50,6 +51,18 @@ public class LibraryMain {
         } catch (IllegalArgumentException e) {
             assert e.getMessage().equals(DELETE_NOT_EXIST_BOOK_MESSAGE);
         }
+    }
+
+    private static void negativeLibrary() {
+
+           
+        
+        try {
+            new Library(-1);
+        } catch (IllegalArgumentException e) {
+            assert e.getMessage().equals(NEGATIVE_LIBRARY_MESSAGE);
+        }
+
     }
 
 }
