@@ -7,13 +7,13 @@ public class Library {
 
     int total = 1;
     int count = 1;
-    List<String> BookList = new ArrayList<String>();
+    List<String> BookList;
 
     public Library(int total)
     {
         
         this.total = total;
-        BookList[total];
+        BookList = new ArrayList<>(total);
     }
 
     public void add(String string) {
@@ -23,13 +23,21 @@ public class Library {
 
     }
 
+    // public boolean find(String string) {
+        
+    //     for(int i = 0; i<3 ; i++)
+    //     BookList.add(string);
+    //     this.count += 1;
+
+    // }
+
     public boolean find(String string) {
         
         for(int i = 0; i<3 ; i++)
         {
-            if(BookList[i].equals(string))
-                return true;
-        }
+            if(BookList.get(i).equals(string))
+            return true;
+         }
 
         return false;
     }
@@ -38,8 +46,8 @@ public class Library {
         
         for(int i = 0; i<3 ; i++)
         {
-            if(BookList[i].equals(string))
-                BookList[i] = "\0";
+            if(BookList.get(i).equals(string))
+                BookList.remove(i);
         }
     }
 

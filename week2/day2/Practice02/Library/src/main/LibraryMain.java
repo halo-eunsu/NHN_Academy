@@ -41,7 +41,7 @@ public class LibraryMain {
             assert e.getMessage().equals(ADD_DUPLICATE_BOOK_MESSAGE);
         }
 
-        assert library.find("어린왕자");
+        assert library.find("어린왕자") : "다시 짜세요";
         assert !library.find("엄지공주");
         
         library.delete("백설공주");
@@ -51,6 +51,8 @@ public class LibraryMain {
         } catch (IllegalArgumentException e) {
             assert e.getMessage().equals(DELETE_NOT_EXIST_BOOK_MESSAGE);
         }
+
+        System.out.println("true");
     }
 
     private static void negativeLibrary() {
