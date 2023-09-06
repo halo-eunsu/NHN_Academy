@@ -12,6 +12,7 @@ public class MyLogger {
 
 
 
+
 class LoggerTest {
     public static int sum(int a, int b) {
         MyLogger.getLogger().info("덧셈 수행 : " + a + " + " + b);
