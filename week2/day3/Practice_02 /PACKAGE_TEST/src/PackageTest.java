@@ -9,8 +9,8 @@ public class PackageTest {
 
 
         List<Integer> list2 = new ArrayList<>();
-        Collections.sort(list1);
-        sort(list2, c);
+        Collections.sort(list1, null);
+        sort(list2, null);
 
 
 
