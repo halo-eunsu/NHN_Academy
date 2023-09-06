@@ -1,26 +1,22 @@
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Logger {
+public class MyLogger {
 
     private final static Logger logger = Logger.getLogger("myLogger");
 
-    public static Logger getLogger(){
+    public static MyLogger getLogger(){
         logger.setLevel(Level.INFO);
         return logger;
     }
 
-    
-    public static void main(String[] args) throws Exception {
-        
-        
-    }
+
 }
 
 class loggerTest{
 
     public static int sum(int a, int b){
-        Logger.getLogger().info("덧셈 수행 : " + a + " + " + b);
+        MyLogger.getLogger().info("덧셈 수행 : " + a + " + " + b);
         return a + b;
     }
 
