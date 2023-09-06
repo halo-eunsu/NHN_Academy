@@ -1,4 +1,4 @@
-import java.lang.System.Logger.Level;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class MyLogger {
