@@ -62,4 +62,40 @@ public class Main {
     return score;
   }
 
+
+  public static double solution(String input) {
+
+
+    int count = 0;
+    double drop = 0;
+    double onedrop = 0;
+
+    for(int i = 0; i < input.length(); i++ )
+    {
+        if(input.charAt(i) == '.'){
+            break;
+        }
+        
+        count++;
+    }
+
+    for(int i = count ; i >=0; i--)
+    {
+        if(input.charAt(i)=='1')
+         onedrop += Math.pow(2, count - (i+1));
+    }
+
+    for(int i = count+1 ;  i< input.length() ;i++){
+
+        if(input.charAt(i) == '1')
+        {
+            drop += Math.pow(0.5, i - count );
+        }
+
+    }
+        
+    return drop + onedrop;
+    
+  }
+
 }

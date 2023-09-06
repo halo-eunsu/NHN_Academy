@@ -31,6 +31,7 @@ public class Main {
     }
 
     private static boolean test(String input, Integer result) {
+        
         if (solution(input) == result) {
             correct++;
             return true;
@@ -38,4 +39,17 @@ public class Main {
 
         return false;
     }
+
+
+    public static int solution(String input) {
+
+        long result = 0;
+        for(int i = input.length() -1 ; i >= 0; i--){
+            if(input.charAt(i)=='1')
+                result += Math.pow(2, input.length() - (i+1));
+        }
+        return (int)result;
+    
+    }
+
 }
