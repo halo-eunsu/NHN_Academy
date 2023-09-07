@@ -3,10 +3,11 @@ package com.nhnacademy.app;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
-
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -21,20 +22,20 @@ public class ApacheCommonsCsvMovieParser implements MovieParser {
         // CSVParser를 생성하고 CSV 파일 파싱
         CSVParser parser = CSVParser.parse(new InputStreamReader(inputStream, "UTF-8"), CSVFormat.EXCEL);
         List<Movie> movies = new ArrayList<>();
+       
+        try {
+            Reader in = new FileReader("file.csv");
+            Iterable<CSVRecord> records = CSVFormat.EXCEL.builder().setHeader().build().parse(in);
+            for (CSVRecord record : records) {
+                String lastName = record.get("Last Name");
+                String firstName = record.get("First Name");
 
-        for (CSVRecord csvRecord : parser) {
-            long movieId = Long.parseLong(csvRecord.get(0));
-            String title = csvRecord.get(1);
-            String[] genreArray = csvRecord.get(2).split("\\|");
-            Set<String> genres = new HashSet<>();
-            for (String genre : genreArray) {
-                genres.add(genre);
+                System.out.print(lastName + " ");
+                System.out.println(firstName);
             }
-
-            Movie movie = new Movie(movieId, title, genres);
-            movies.add(movie);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-
         return movies;
     }
 
