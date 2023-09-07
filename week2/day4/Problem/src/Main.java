@@ -55,7 +55,7 @@ public class Main {
     
         int[][] answer = new int[input][input];
         int number = 1;
-        int x = 0;
+        int x = -1;
         int y = 0;
         int direction = 1;
 
@@ -76,7 +76,7 @@ public class Main {
                 answer[y][x] = number++;
 
             }
-            direction += -1;
+            direction *= -1;
 
 
         }
