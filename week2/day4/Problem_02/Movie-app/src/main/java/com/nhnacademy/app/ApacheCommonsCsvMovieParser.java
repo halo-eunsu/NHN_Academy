@@ -28,10 +28,10 @@ public class ApacheCommonsCsvMovieParser implements MovieParser {
     @Override
 
     
-    public InputStream getMovieFileAsStream() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getMovieFileAsStream'");
-    }
+    public InputStream getMovieFileAsStream(){
+        return getClass().getClassLoader().getResourceAsStream(MOVIE_FILE_NAME);  
+      }
+      
 
 
 }
