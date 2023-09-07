@@ -51,32 +51,37 @@ public class Main {
 
 
     public static int[][] solution(int input){
+        
+    
+        int[][] answer = new int[input][input];
+        int number = 1;
+        int x = 0;
+        int y = 0;
+        int direction = 1;
 
-        int[][] result = {{}};
-
-        for(int i = 0 ;i<input ;i++)
+        while(input > 0)
         {
-            result[0][i] = i;
-        }
-
-        for(int i = input - 1 ; i > 0; i--)
-        {
-            int count = input -1;
-
-            if(count % 2 == 0)
+            for(int i = 0; i < input ; i++)
             {
-                
+                x += direction;
+                answer[y][x] = number++;
             }
 
-            else
+            input--;
+
+            for(int i = 0; i< input ;i++)
             {
+                y += direction;
+
+                answer[y][x] = number++;
 
             }
+            direction += -1;
+
+
         }
 
 
-
-
-        return result;
+        return answer;
     }
 }
