@@ -33,6 +33,7 @@ public class ApacheCommonsCsvMovieParser implements MovieParser {
 
             Movie movie = new Movie(movieId, title, genres);
             movies.add(movie);
+            
         }
 
         return movies;
