@@ -50,38 +50,41 @@ public class Main {
     }
 
 
-    public static int[][] solution(int input){
-        
-    
+    public static int[][] solution(int input) {
         int[][] answer = new int[input][input];
         int number = 1;
         int x = 0;
         int y = 0;
-        int direction = 1;
-
-        while(input > 0)
-        {
-            for(int i = 0; i < input ; i++)
-            {
-                x += direction;
+        int directionX = 1; // Horizontal direction
+        int directionY = 0; // Vertical direction
+    
+        while (number <= input * input) {
+            // Check if the next position is within bounds and not filled
+            if (x >= 0 && x < input && y >= 0 && y < input && answer[y][x] == 0) {
                 answer[y][x] = number++;
+            } else {
+                // If we encounter an out-of-bounds or filled cell, change direction
+                x -= directionY; // Move back one step in the X direction
+                y -= directionX; // Move back one step in the Y direction
+                if (directionX == 0) {
+                    // If moving vertically, change to horizontal
+                    directionX = directionY;
+                    directionY = 0;
+                } else {
+                    // If moving horizontally, change to vertical
+                    directionY = -directionX;
+                    directionX = 0;
+                }
+                x += directionX; // Move in the new direction
+                y += directionY; // Move in the new direction
             }
-
-            input--;
-
-            for(int i = 0; i< input ;i++)
-            {
-                y += direction;
-
-                answer[y][x] = number++;
-
-            }
-            direction += -1;
-
-
+    
+            // Move to the next position
+            x += directionX;
+            y += directionY;
         }
-
-
+    
         return answer;
     }
+       
 }
