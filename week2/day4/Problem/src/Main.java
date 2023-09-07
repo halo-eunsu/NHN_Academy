@@ -63,28 +63,36 @@ public class Main {
             if (x >= 0 && x < input && y >= 0 && y < input && answer[y][x] == 0) {
                 answer[y][x] = number++;
             } else {
-                // If we encounter an out-of-bounds or filled cell, change direction
-                x -= directionY; // Move back one step in the X direction
-                y -= directionX; // Move back one step in the Y direction
-                if (directionX == 0) {
-                    // If moving vertically, change to horizontal
-                    directionX = directionY;
-                    directionY = 0;
-                } else {
-                    // If moving horizontally, change to vertical
-                    directionY = -directionX;
-                    directionX = 0;
-                }
-                x += directionX; // Move in the new direction
-                y += directionY; // Move in the new direction
-            }
+                // If we encounter an out-of-bounds or filled cell, backtrack and change direction
+                x -= directionX;
+                y -= directionY;
     
-            // Move to the next position
-            x += directionX;
-            y += directionY;
+                // Change direction (clockwise)
+                if (directionX == 1 && directionY == 0) {
+                    int temp = directionX;
+                    directionX = 0;
+                    directionY = temp;
+                } else if (directionX == 0 && directionY == 1) {
+                    int temp = directionX;
+                    directionX = -directionY;
+                    directionY = temp;
+                } else if (directionX == -1 && directionY == 0) {
+                    int temp = directionX;
+                    directionX = 0;
+                    directionY = temp;
+                } else if (directionX == 0 && directionY == -1) {
+                    int temp = directionX;
+                    directionX = -directionY;
+                    directionY = temp;
+                }
+    
+                // Move in the new direction
+                x += directionX;
+                y += directionY;
+            }
         }
     
         return answer;
     }
-       
+          
 }
