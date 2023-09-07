@@ -21,7 +21,7 @@ public class ApacheCommonsCsvMovieParser implements MovieParser {
   }
 
 
-    CSVParser parser = CSVParser.parse(csvData, CSVFormat.EXCEL);
+    CSVParser parser = CSVParser.parse(csvData, CSVFormat.EXCEL)
     for (CSVRecord csvRecord : parser) {
         ...
     }
