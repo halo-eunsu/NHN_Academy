@@ -1,3 +1,5 @@
+package com.nhnacademy.app;
+
 public class Main {
 
     private static double correctCount = 0;
