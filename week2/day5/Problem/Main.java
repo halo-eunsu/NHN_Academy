@@ -21,8 +21,7 @@ public class Main {
     private static boolean test(String input, String input2, String answer) {
         int first = Integer.parseInt(input);
         int second = Integer.parseInt(input2);
-        System.out.println(first);
-        System.out.println(second);
+     
 
         boolean res = String.valueOf(solution(first, second)).equals(answer);
         if (res)
@@ -33,18 +32,31 @@ public class Main {
 
     public static int solution(int first, int second){
         
-        int result = 0;
+        int result1 = 0;
+        int result2 = 0;
+        
 
-        int reverseFirst = 0;
+        int answer = 0;
 
-        reverseFirst += first % 10; //3
-        first /= 10; //12
+        while(first != 0){
+            result1 = result1 * 10 + first % 10;
+            first /= 10;
+        }
 
-        //2
+        while(second != 0){
+            result2 = result2 * 10 + second % 10;
+            second /= 10;
+        }
 
+        int third = result1 + result2;
 
-        return result;
+        while(third != 0){
+            answer = answer * 10 + third % 10;
+            third /= 10;
+        }
 
+        return answer;
 
+        }
 
-}
+    }
