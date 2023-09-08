@@ -15,19 +15,20 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 
 public class BasicMovieParser implements MovieParser {
-    
+
     @Override
     public List<Movie> parse(String fileName) throws IOException {
         
+        InputStream inputStream = getMovieFileAsStream();
         
-        
-        BufferedReader movieList = new BufferedReader(new FileReader("src/main/resources/movies.csv"));
+        BufferedReader movieList = new BufferedReader(new InputStreamReader(inputStream));
 
         String data = "";
         String [] sList;
         long movieId;
         String title;
         String genre;
+        List<String> gns= new ArrayList<>();
 
         List<Movie> movies = new ArrayList<>();
         try{
@@ -40,9 +41,14 @@ public class BasicMovieParser implements MovieParser {
                     movieId = Long.parseLong(sList[0]);
                     title = sList[1];
                     genre = sList[2];
-                    Movie movie = new Movie(movieId, title, genre);
+                    String[] arr = genre.split("\\|");
+                    for(int i = 0; i<arr.length; i++){
+                        gns.add(arr[i]);
+                    }
+                    Movie movie = new Movie(movieId, title, new HashSet(gns));
 
                     movies.add(movie);
+                    gns.clear();
                 }
                 }
             }
