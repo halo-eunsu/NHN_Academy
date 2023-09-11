@@ -19,6 +19,9 @@ class Counter{
         this.MAX_COUNT_NUM = MAX_COUNT_NUM;
     }
 
+
+    
+
 }
 
 
