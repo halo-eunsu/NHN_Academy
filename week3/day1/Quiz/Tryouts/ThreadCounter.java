@@ -10,18 +10,7 @@ public class ThreadCounter extends Thread {
         count = 0;
     }
 
-    @Override
-    public void run() {
-        while (count < maxCount) {
-            try {
-                ++count;
-                System.out.println(getName() + " : " + count);
-                Thread.sleep(1000);
-            } catch (InterruptedException ignore) {
-                Thread.currentThread().interrupt();
-            }
-        }
-    }
+
 }
 
 class RunnerableCounter implements Runnable {
@@ -29,7 +18,8 @@ class RunnerableCounter implements Runnable {
     int count = 0;
     String name;
     int maxCount;
-        Thread thread;
+    Thread thread;
+    boolean running = false;
 
             public RunnerableCounter(String name, int maxCount) {
                 this.name = name;
@@ -43,7 +33,32 @@ class RunnerableCounter implements Runnable {
         thread.start();
     }
 
+
+    public void stop(){
+        running = false;
+    }
+
+    public boolean isRunning() {
+        return running;
+    }
+
+
+
     @Override
+    public void run() {
+
+        running = true;
+
+        while (running && count < maxCount) {
+            try {
+                ++count;
+                System.out.println(getName() + " : " + count);
+                Thread.sleep(10000);
+            } catch (InterruptedException ignore) {
+                Thread.currentThread().interrupt();
+            }
+        }
+    }
 
 }
 
@@ -61,5 +76,6 @@ class Run{
 
         thread2.start();
 
+        
     }
 }
