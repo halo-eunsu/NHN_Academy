@@ -1,8 +1,8 @@
-package com.nhnacademy.thread_class_extension;
 
 
 
-public class ThreadCounter extends Thread {
+
+public class RunnerableCounter02 extends Thread {
     int count;
     int maxCount;
 
@@ -73,20 +73,16 @@ class RunnerableCounter implements Runnable {
 class Run{
 
 
-    public static void main(String[] args) {
-        
-        RunnerableCounter thread1 = new RunnerableCounter("counter2", 10);
-        RunnerableCounter thread2 = new RunnerableCounter("counter", 10);
-        
+public static void main(String[] args) {
+    RunnerableCounter thread1 = new RunnerableCounter("counter2", 10);
+    RunnerableCounter thread2 = new RunnerableCounter("counter", 10);
 
-        thread1.start();
-        thread2.start();
+    thread1.start();
+    thread2.start();
 
+    
         Thread.sleep(2000);
-        thread1.stop();
+    thread1.stop();
+}
 
-        
-        
-        
-    }
 }
