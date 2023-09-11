@@ -14,7 +14,7 @@ public class SharedCounter implements Runnable{
             this.sharedCount = sharedCount;
     }
 
-    
+
     public void start(){
         thread.start();
     }    
@@ -36,7 +36,10 @@ public class SharedCounter implements Runnable{
     public void run(){
         while(!Thread.currentThread().isInterrupted() && (count < maxCount)) {
             count++;
-            sharedCount.increment();
+            synchronized(sharedCount){
+                sharedCount.increment();
+            }
+            
 
         }
 
