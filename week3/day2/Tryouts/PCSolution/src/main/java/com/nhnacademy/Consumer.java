@@ -4,17 +4,20 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Consumer implements Runnable {
     Store store;
-    Thread thread;
+    String name;
     long minWaitingTime = 10000;
     long maxWaitingTime = 30000;
-    public Consumer(String name, Store store){
-        thread = new Thread(this, name);
+
+    public Consumer(String name, Store store) {
+        this.name = name;
         this.store = store;
     }
 
-    public void start() {
-        thread.start();
+    public String getName() {
+        return name;
     }
+
+
 
     @Override
     public void run() {
@@ -26,7 +29,8 @@ public class Consumer implements Runnable {
 
                 store.exit();
 
-                long waitingTime = minWaitingTime +ThreadLocalRandom.current().nextLong(maxWaitingTime - minWaitingTime + 1);
+                long waitingTime = minWaitingTime
+                        + ThreadLocalRandom.current().nextLong(maxWaitingTime - minWaitingTime + 1);
                 Thread.sleep(waitingTime);
 
             } catch (InterruptedException ignore) {
