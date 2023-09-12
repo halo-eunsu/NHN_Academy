@@ -7,7 +7,8 @@ public class Consumer implements Runnable {
     Thread thread;
     long minWaitingTime = 10000;
     long maxWaitingTime = 30000;
-    public Consumer(String name, Store store){
+
+    public Consumer(String name, Store store) {
         thread = new Thread(this, name);
         this.store = store;
     }
@@ -15,6 +16,7 @@ public class Consumer implements Runnable {
     public void start() {
         thread.start();
     }
+
 
     @Override
     public void run() {
@@ -26,7 +28,8 @@ public class Consumer implements Runnable {
 
                 store.exit();
 
-                long waitingTime = minWaitingTime +ThreadLocalRandom.current().nextLong(maxWaitingTime - minWaitingTime + 1);
+                long waitingTime = minWaitingTime
+                        + ThreadLocalRandom.current().nextLong(maxWaitingTime - minWaitingTime + 1);
                 Thread.sleep(waitingTime);
 
             } catch (InterruptedException ignore) {
