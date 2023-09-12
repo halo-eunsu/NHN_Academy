@@ -1,4 +1,4 @@
-public class SharedCounter implements Runnable{
+public class SharedCounter implements Runnable {
 
 
 
@@ -8,43 +8,47 @@ public class SharedCounter implements Runnable{
     SharedCount sharedCount;
 
 
-    public SharedCounter(String name, int maxCount, SharedCount sharedCount){
-            thread = new Thread(this, name);
-            this.maxCount = maxCount;
-            this.sharedCount = sharedCount;
+    public SharedCounter(String name, int maxCount, SharedCount sharedCount) {
+        thread = new Thread(this, name);
+        this.maxCount = maxCount;
+        this.sharedCount = sharedCount;
     }
 
 
-    public void start(){
+    public void start() {
         thread.start();
-    }    
+    }
 
-    public void stop(){
+    public void stop() {
         thread.interrupt();
     }
 
-    public boolean isAlive(){
+    public boolean isAlive() {
         return thread.isAlive();
     }
 
     public int getCount() {
         return count;
     }
-        
+
+    public Thread getThread() {
+        return thread;
+    }
+
 
     @Override
-    public void run(){
-        while(!Thread.currentThread().isInterrupted() && (count < maxCount)) {
+    public void run() {
+        while (!Thread.currentThread().isInterrupted() && (count < maxCount)) {
             count++;
-            synchronized(sharedCount){
+            synchronized (sharedCount) {
                 sharedCount.increment();
             }
-            
+
 
         }
 
     }
-    
+
 
     public static void main(String[] args) {
         SharedCount sharedCount = new SharedCount();
@@ -54,8 +58,7 @@ public class SharedCounter implements Runnable{
         counter1.start();
         counter2.start();
 
-        while(counter1.isAlive() || counter2.isAlive())
-        {
+        while (counter1.isAlive() || counter2.isAlive()) {
 
         }
 
