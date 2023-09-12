@@ -1,25 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
 
+public class example02_plus {
 
-public class example02 {
+    public static int oneToconv(int a) {
 
-
-    public static void main(String[] args) {
-
-        int count = 0;
-
-        int a = 55;
-        int b = 5555;
+        int count2 = 0;
         List<Integer> con = new ArrayList<>();
         boolean flag = true;
-        int findCon2 = 0;
 
-        for (int i = 1; i <= b; i++) {
+        for (int i = 1; i <= a; i++) {
             if (i == 1)
                 continue;
             if (i == 2) {
-                count++;
+                count2++;
             }
             if (i % 2 == 0) {
                 continue;
@@ -37,24 +31,17 @@ public class example02 {
                 }
                 if (flag == true) {
                     con.add(i);
-                    count++;
+                    count2++;
                 }
             } else {
                 con.add(i);
-                count++;
+                count2++;
             }
 
         }
 
-        System.out.println("count : " + count);
-
-        int count2 = example02_plus.oneToconv(a - 1);
-        System.out.println("count2 : " + count2);
-
-        int result = count - count2;
-
-        System.out.println("result : " + result);
-
+        // System.out.println("count2 : " + count2);
+        return count2;
 
     }
 }
