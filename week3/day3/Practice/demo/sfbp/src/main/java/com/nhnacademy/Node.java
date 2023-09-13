@@ -1,14 +1,24 @@
 package com.nhnacademy;
 
-import java.util.logging.Logger;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public abstract class Node {
     static Integer count;
     final String id;
-    Logger logger;
+    Logger log;
 
-    public Node( ) {...} // 기본 생성자
+    public Node( ) {
+        
+        count++;
+        this.id = String.format("%s=%02d", getClass().getSimpleName(), count);
+        log.trace("create node : {}", id);
+    } // 기본 생성자
     
+    public String getId() {
+        return id;
+    }
     
     
     //getter & setter
