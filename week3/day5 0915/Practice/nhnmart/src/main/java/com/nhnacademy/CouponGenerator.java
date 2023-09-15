@@ -23,11 +23,14 @@ public class CouponGenerator {
     }
 
     @Override
-    public Coupon next(){
+    public synchronized Coupon next(){
         if(!hasNext()){
             throw new NoSuchElementException();
         }
-        return Coupon
+        return Coupon.ofDiscount(ID_GENERATOR)
     }
+
+
+    
 
 }

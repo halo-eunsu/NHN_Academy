@@ -5,7 +5,7 @@ public class CouponRequest extends Request{
 
     private final Customer customer;
 
-    public CouponRequest(Customer customer) { //쿠폰을 발급하기 위해 고객이 줄을 서면, 
+    public CouponRequest(Customer customer) { 
         this.customer = customer;
     }
 
@@ -13,6 +13,15 @@ public class CouponRequest extends Request{
     @Override
     protected void execute(){
         // 쿠폰발급 로직
+
+        if(CouponGenerator.getcouponGenerator().next()){
+            log.info("thread=id:{}, custormer-id:{}, coupon-id:{}",Thread.currentThread().getId(), customer.getCouponli);
+
+
+        }
+        else{
+            log.info("thread=id:{}, custormer-id:{}, coupon-id:{}",Thread.currentThread().getId(), customer.getCouponli);
+        }
     }
     
 }
