@@ -23,7 +23,7 @@ public class Exam03 {
                 state2 = counter2.getThread().getState();
                 System.out.println("T1 : " + state1 + ", T2 : " + state2);
             }
-            Thread.sleep(1000);
+            Thread.sleep(10);
         }
     }
 }
