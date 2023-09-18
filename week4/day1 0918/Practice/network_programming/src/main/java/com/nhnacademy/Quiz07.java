@@ -12,7 +12,31 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @Slf4j
-public class Quiz06 {
+public class Quiz07 {
+
+    static class Receiver implements Runnable {
+
+        public Receiver(BufferedInputStream inputStream){
+
+        }
+
+        public void run(){
+
+
+
+
+            try {
+                byte [] buffer = new byte[2048];
+                int length;
+
+                while ((length = inputStream.read(buffer)) >= 0){
+
+                }
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+    }
 
     
     public static void main(String[] args) {
@@ -22,7 +46,12 @@ public class Quiz06 {
             OutputStream outputStream = socket.getOutputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
-            BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream)
+            BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream);
+
+            Receiver receiver = new Receiver(inputStream);
+            Thread receiverThread = new Thread(receiver);
+            receiverThread.start();
+
         ) {
            
            String line;

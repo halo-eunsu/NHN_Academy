@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Quiz06",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Quiz06",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
             "name": "Quiz05",
             "request": "launch",
             "mainClass": "com.nhnacademy.Quiz05",
