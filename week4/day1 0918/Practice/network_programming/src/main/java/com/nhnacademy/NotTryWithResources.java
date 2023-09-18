@@ -1,16 +1,21 @@
 package com.nhnacademy;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class Quiz02 {
-    
+public class NotTryWithResources {
+
+
+
     public static void main(String[] args) {
         
 
              
-        for(int i = 0; i<65536 ; i++){
+        for(int i = 0; i<100000 ; i++){
             try (Socket socket = new Socket("localhost", i)){
                 
                 System.out.println("Port "+ i +" 열려있습니다.");
@@ -26,4 +31,4 @@ public class Quiz02 {
             }
         }
     }
-}
+  }

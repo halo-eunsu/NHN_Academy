@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Quiz05",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Quiz05",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
+            "name": "Example01",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Example01",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Main",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
+            "name": "Network",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Network",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
+            "name": "NotTryWithResources",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.NotTryWithResources",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
+            "name": "Quiz01",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Quiz01",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
+            "name": "Quiz02",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Quiz02",
+            "projectName": "network_programming"
+        },
+        {
+            "type": "java",
+            "name": "Quiz03",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.Quiz03",
+            "projectName": "network_programming"
+        }
+    ]
+}
