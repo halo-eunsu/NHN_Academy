@@ -41,7 +41,7 @@ public class Quiz07 {
     
     public static void main(String[] args) {
         byte[] buffer = new byte[2048];
-        try (Socket socket = new Socket("localhost", 12345);
+        try (Socket socket = new Socket("ems.nhnacademy.com", 12345);
             InputStream inputStream = socket.getInputStream();
             OutputStream outputStream = socket.getOutputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
