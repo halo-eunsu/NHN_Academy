@@ -29,7 +29,7 @@ public class Quiz09 {
                 socketOut.write(line + "\n");
                 socketOut.flush();
 
-                line = socketIn.readLine();
+                line = terminalIn.readLine();
                 System.out.println(line);
             }
 
