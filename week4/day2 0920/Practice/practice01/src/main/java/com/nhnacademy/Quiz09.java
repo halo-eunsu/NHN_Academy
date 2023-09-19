@@ -26,12 +26,20 @@ public class Quiz09 {
             String line;
 
             while((line = socketIn.readLine()) != null){
+                terminalOut.write(line + "\n");
+                terminalOut.flush();
+                
+                
                 socketOut.write(line + "\n");
                 socketOut.flush();
 
-                line = terminalIn.readLine();
-                System.out.println(line);
+                
+                
+
+                //line = terminalIn.readLine();
+                //System.out.println(line);
             }
+
 
     }catch(IOException ignore) {
         System.out.println("연결에 실패하였습니다.");
