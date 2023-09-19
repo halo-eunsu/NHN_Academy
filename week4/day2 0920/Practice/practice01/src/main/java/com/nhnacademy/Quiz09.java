@@ -14,8 +14,8 @@ public class Quiz09 {
 
 
   public static void main(String[] args) {
-    try(ServerSocket serverSocket = new ServerSocket(port);
-        Socket socket = new Socket(serverSocket.accept());
+    try(ServerSocket serverSocket = new ServerSocket(12345);
+        Socket socket = serverSocket.accept();
         BufferedReader socketIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         BufferedWriter socketOut = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
         BufferedReader terminalIn = new BufferedReader(new InputStreamReader(System.in));
@@ -25,7 +25,7 @@ public class Quiz09 {
             System.out.println("접속에 성공하였습니다.");
             String line;
 
-            while((line = terminalIn.readLine()) != null){
+            while((line = socketIn.readLine()) != null){
                 socketOut.write(line + "\n");
                 socketOut.flush();
 
