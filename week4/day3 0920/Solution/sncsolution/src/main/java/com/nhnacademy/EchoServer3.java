@@ -43,9 +43,10 @@ public class EchoServer3 extends Thread {
         {
             this.writer = writer;
             while(!Thread.currentThread().isInterrupted()) {
-                String line = reader.readLine();
-                writer.write(reader.readLine() + "\n");
-                writer.flush();
+                String line = reader.readLine() + "\n";
+                for(EchoServer3 server : serverList) {
+                    server.send(line);
+                }
             }
         } catch (IOException ignore) {
             
