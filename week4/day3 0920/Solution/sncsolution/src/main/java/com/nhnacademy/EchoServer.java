@@ -47,7 +47,7 @@ public class EchoServer extends Thread {
     public static void main(String[] args) {
         int port = 1234;
 
-        List<EchoServer2> serverList = new LinkedList<>();
+        List<EchoServer> serverList = new LinkedList<>();
 
 
         try (ServerSocket serverSocket = new ServerSocket(port))
@@ -55,7 +55,7 @@ public class EchoServer extends Thread {
             while(!Thread.currentThread().isInterrupted()){
                 Socket socket = serverSocket.accept();
 
-                EchoServer2 server = new EchoServer2(socket);
+                EchoServer server = new EchoServer(socket);
                 server.start();
 
 
@@ -65,7 +65,7 @@ public class EchoServer extends Thread {
 
         }
 
-        for(EchoServer2 server : serverList){
+        for(EchoServer server : serverList){
             server.interrupt();
             try {
                 server.join();

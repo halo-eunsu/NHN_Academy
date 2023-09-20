@@ -34,14 +34,15 @@ public class EchoServer2 extends Thread {
         try (
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-            this writer = writer;
+            
              )
               {
-            while(!Thread.currentThread().isInterrupted()) {
-                String line = reader.readLine();
-                writer.write(reader.readLine() + "\n");
-                writer.flush();
-            }
+                    this.writer = writer;
+                    while(!Thread.currentThread().isInterrupted()) {
+                        String line = reader.readLine();
+                        writer.write(reader.readLine() + "\n");
+                        writer.flush();
+                    }
         } catch (IOException ignore) {
             
         }
@@ -55,7 +56,7 @@ public class EchoServer2 extends Thread {
     public static void main(String[] args) {
         int port = 1234;
 
-        List<EchoServer> serverList = new LinkedList<>();
+        List<EchoServer2> serverList = new LinkedList<>();
 
 
         try (ServerSocket serverSocket = new ServerSocket(port))
@@ -63,7 +64,7 @@ public class EchoServer2 extends Thread {
             while(!Thread.currentThread().isInterrupted()){
                 Socket socket = serverSocket.accept();
 
-                EchoServer server = new EchoServer(socket);
+                EchoServer2 server = new EchoServer2(socket);
                 server.start();
 
 
@@ -73,7 +74,7 @@ public class EchoServer2 extends Thread {
 
         }
 
-        for(EchoServer server : serverList){
+        for(EchoServer2 server : serverList){
             server.interrupt();
             try {
                 server.join();

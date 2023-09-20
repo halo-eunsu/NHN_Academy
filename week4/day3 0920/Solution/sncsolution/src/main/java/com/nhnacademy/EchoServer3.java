@@ -1,5 +1,7 @@
-package com.nhnacademy;
+//BroadCast EchoServer
 
+
+package com.nhnacademy;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -29,7 +31,7 @@ public class EchoServer3 extends Thread {
         writer.flush();
     }
 
-    
+
 
     @Override
     public void run(){
