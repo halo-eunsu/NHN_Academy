@@ -29,7 +29,7 @@ public class Server {
                 
           
                 
-                
+                //terminalIn이 없음 -> 입력이 안됨
 
                 //line = terminalIn.readLine();
                 //System.out.println(line);

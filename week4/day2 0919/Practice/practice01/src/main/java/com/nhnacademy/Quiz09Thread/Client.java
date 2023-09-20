@@ -35,15 +35,15 @@ public class Client{
                     socketOut.write(line + "\n");
                     socketOut.flush();
     
-
+                    // terminalOut이 없음 -> 출력이 안됨
 
                 } catch (IOException e) {
                     System.out.println("전송에 실패하였습니다.");
                 }      
                 
 
-                line = terminalIn.readLine();
-                System.out.println(line);
+                // line = terminalIn.readLine();
+                // System.out.println(line);
             }
 
 
