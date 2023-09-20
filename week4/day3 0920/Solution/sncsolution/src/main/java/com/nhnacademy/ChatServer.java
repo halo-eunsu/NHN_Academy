@@ -1,7 +1,5 @@
-//BroadCast EchoServer
+package com.nhnacademy;
 
-
-package com.nhnacademy ;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -11,85 +9,85 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.Exchanger;
 
 public class ChatServer extends Thread {
     static List<ChatServer> serverList = new LinkedList<>();
     Socket socket;
     BufferedWriter writer;
 
-
     public ChatServer(Socket socket) {
-
         this.socket = socket;
         serverList.add(this);
     }
-
 
     public void send(String message) throws IOException {
         writer.write(message);
         writer.flush();
     }
 
-
-
     @Override
-    public void run(){
-
-
-        try (
-            BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-             )
-        {
+    public void run() {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()))) {
             this.writer = writer;
-            while(!Thread.currentThread().isInterrupted()) {
+            while (!Thread.currentThread().isInterrupted()) {
                 String line = reader.readLine();
-                //id 확인
+
+                System.out.println(getName() + " - " + line);
                 String[] tokens = line.trim().split(":");
-                if(tokens.length > 1) {
-                    if(tokens[0].equalsIgnoreCase("ID")){
+                if (tokens.length == 1) {
+                    if (tokens[0].equalsIgnoreCase("who")) {
+                        writer.write(getName() + "\n");
+                        writer.flush();
+                    }
+                } else if (tokens.length > 1) {
+                    if (tokens[0].equalsIgnoreCase("ID")) {
                         setName(tokens[1]);
+                    } else if ((tokens[0].charAt(0) == '@') && (tokens[0].length() > 1)) {
+                        String targetId = tokens[0].substring(1, tokens[0].length());
+                        if (targetId.equals("@")) {
+                            for (ChatServer server : ChatServer.serverList) {
+                                server.send("#" + getName() + ":" + tokens[1] + "\n");
+                            }
+                        } else {
+                            for (ChatServer server : serverList) {
+                                if (server.getName().equals(targetId)) {
+                                    server.send("#" + getName() + ":" + tokens[1] + "\n");
+                                    break;
+                                }
+                            }
+                        }
                     }
                 }
 
-
-                for(ChatServer server : serverList) {
-                    server.send(line);
-                }
             }
         } catch (IOException ignore) {
-            
+            //
         }
+
         try {
             socket.close();
-        } catch (IOException e) {
-            // TODO: handle exception
+        } catch (IOException ignore) {
+            //
         }
     }
 
     public static void main(String[] args) {
         int port = 1234;
 
-        List<ChatServer> serverList = new LinkedList<>();
-
-
-        try (ServerSocket serverSocket = new ServerSocket(port))
-        {
-            while(!Thread.currentThread().isInterrupted()){
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
+            while (!Thread.currentThread().isInterrupted()) {
                 Socket socket = serverSocket.accept();
 
                 ChatServer server = new ChatServer(socket);
                 server.start();
-
-
-                serverList.add(server);
             }
-        }catch(IOException e){
 
+        } catch (IOException e) {
+            System.out.println(e);
         }
 
-        for(ChatServer server : serverList){
+        for (ChatServer server : serverList) {
             server.interrupt();
             try {
                 server.join();
