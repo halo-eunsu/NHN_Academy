@@ -1,17 +1,17 @@
 package com.nhnacademy;
 
-import java.net.ServerSocket;
+// import java.net.ServerSocket;
 
 public class Snc {
 
 
 
 
-    if(serverMode) {
+    // if(serverMode) {
 
-        try (ServerSocket serverSocket = new ServerSocket(port).accept();
-            Snc.run(socket);
-        )
-    }
+    //     try (ServerSocket serverSocket = new ServerSocket(port).accept();
+    //         Snc.run(socket);
+    //     )
+    // }
     
 }
