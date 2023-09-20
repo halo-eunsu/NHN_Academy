@@ -1,3 +1,5 @@
+//Solution of Chatserver
+
 package com.nhnacademy;
 
 import java.io.BufferedReader;
