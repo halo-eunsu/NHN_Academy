@@ -1,7 +1,7 @@
 //BroadCast EchoServer
 
 
-package com.nhnacademy;
+package com.nhnacademy.BroadServer;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -62,7 +62,7 @@ public class EchoServer3 extends Thread {
     public static void main(String[] args) {
         int port = 1234;
 
-        List<EchoServer> serverList = new LinkedList<>();
+        List<EchoServer3> serverList = new LinkedList<>();
 
 
         try (ServerSocket serverSocket = new ServerSocket(port))
@@ -70,7 +70,7 @@ public class EchoServer3 extends Thread {
             while(!Thread.currentThread().isInterrupted()){
                 Socket socket = serverSocket.accept();
 
-                EchoServer server = new EchoServer(socket);
+                EchoServer3 server = new EchoServer3(socket);
                 server.start();
 
 
@@ -80,7 +80,7 @@ public class EchoServer3 extends Thread {
 
         }
 
-        for(EchoServer server : serverList){
+        for(EchoServer3 server : serverList){
             server.interrupt();
             try {
                 server.join();

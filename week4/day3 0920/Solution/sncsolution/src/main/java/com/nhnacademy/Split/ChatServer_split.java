@@ -1,4 +1,4 @@
-package com.nhnacademy;
+package com.nhnacademy.Split;
 
 import java.util.Arrays;
 
