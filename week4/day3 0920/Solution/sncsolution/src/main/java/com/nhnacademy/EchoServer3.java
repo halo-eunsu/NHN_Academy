@@ -23,15 +23,13 @@ public class EchoServer3 extends Thread {
         serverList.add(this);
     }
 
-    // public void write(String line) throws IOException {
-    //     writer.write(line);
-    //     writer.flush();
-    // }
 
     public void send(String message) throws IOException {
         writer.write(message);
         writer.flush();
     }
+
+    
     @Override
     public void run(){
 
