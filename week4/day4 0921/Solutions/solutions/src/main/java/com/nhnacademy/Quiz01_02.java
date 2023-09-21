@@ -23,6 +23,10 @@ public class Quiz01_02 {
         options.addOption("f", "flag", false, "상태 출력");
         options.addOption("v", "version", false, "print the version");
         options.addOption("i", "id", true, "식별자");
+        
+        
+        
+        //builder pattern으로 선언한 형식
         Option idOption = Option.builder("i")
                           .hasArg()
                           .argName("id")
