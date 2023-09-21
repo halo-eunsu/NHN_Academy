@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Quiz03",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.JSON.Quiz03",
+            "projectName": "tryouts"
+        },
+        {
+            "type": "java",
+            "name": "Quiz02",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.JSON.Quiz02",
+            "projectName": "tryouts"
+        },
+        {
+            "type": "java",
+            "name": "Quiz01",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.JSON.Quiz01",
+            "projectName": "tryouts"
+        },
+        {
+            "type": "java",
+            "name": "Exam04",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.JSON.Exam04",
+            "projectName": "tryouts"
+        },
+        {
+            "type": "java",
             "name": "Exam02",
             "request": "launch",
             "mainClass": "com.nhnacademy.Exam02",
