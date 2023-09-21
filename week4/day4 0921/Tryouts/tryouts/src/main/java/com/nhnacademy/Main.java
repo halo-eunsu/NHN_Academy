@@ -8,14 +8,12 @@ public class Main {
        
        
        
-        for(int i = 1; i < arr.length; i++){
+        for(int i = 1 ; i < arr.length ; i++){
 
-            for(int j = 0; j < arr.length; j++){
-
-                
-                if(arr[i] > arr[j]){
-                    swap(arr, j, i);
-                    
+            for(int j = 0; j < arr.length -1 ; j++){
+       
+                if(arr[j] > arr[j+1]){
+                    swap(arr, j, j+1);
                 }
 
             }
@@ -32,7 +30,7 @@ public class Main {
 
     private static void swap(Integer[] arr, int i, int j) {
         int temp = arr[i];
-        arr[j] = arr[i];
-        arr[i] = temp;
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }

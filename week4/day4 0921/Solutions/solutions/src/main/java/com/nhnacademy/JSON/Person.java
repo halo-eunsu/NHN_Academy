@@ -5,9 +5,10 @@ public class Person {
 
     Address address;
 
-    public Person(String name){
+    public Person(String name, Address address){
 
         this.name = name;
+        this.address= address;
     }
 
     public String getName(){
@@ -22,7 +23,7 @@ public class Person {
         return address;
     }
 
-    public Address getAddress2(){
-        return address;
-    }
+    // public Address getAddress2(){
+    //     return address;
+    // }
 }

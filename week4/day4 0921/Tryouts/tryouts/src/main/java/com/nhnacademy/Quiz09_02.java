@@ -14,7 +14,7 @@ public class Quiz09_02 {
 
         options.addOption("ac", "acception", false, "상태");
         options.addOption("p", "path", false, "경로");
-        
+        options.addOption("t", ac, false, ac)
 
     }
 }
