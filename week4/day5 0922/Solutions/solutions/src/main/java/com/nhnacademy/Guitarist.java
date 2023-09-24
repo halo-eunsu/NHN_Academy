@@ -76,7 +76,7 @@ public class Guitarist {
         }
 
         public Guitarist build() {
-            return null;
+            return new Guitarist(this);
         }
 
 
