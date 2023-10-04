@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CustomHttpClient",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.CustomHttpClient",
+            "projectName": "solution",
+            "args": [
+                "-X",
+                "X-Custom-Header: Custom-Value",
+                "-X",
+                "X-Custom2-Header: Selection-Value",
+               
+            ]
+        },
+        {
+            "type": "java",
+            "name": "HttpRequestWithSocket",
+            "request": "launch",
+            "mainClass": "com.nhnacademy.HttpRequestWithSocket",
+            "projectName": "solution"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -22,7 +43,10 @@
             "name": "SimpleCurl",
             "request": "launch",
             "mainClass": "com.nhnacademy.SimpleCurl",
-            "projectName": "solution"
+            "projectName": "solution",
+            "args": [
+                "-H"
+            ]
         }
     ]
 }

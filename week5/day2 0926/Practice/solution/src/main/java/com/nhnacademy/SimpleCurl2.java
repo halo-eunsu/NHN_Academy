@@ -1,71 +1,71 @@
-package com.nhnacademy;
+// package com.nhnacademy;
 
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
+// import org.apache.commons.cli.CommandLine;
+// import org.apache.commons.cli.CommandLineParser;
+// import org.apache.commons.cli.DefaultParser;
+// import org.apache.commons.cli.HelpFormatter;
+// import org.apache.commons.cli.Option;
+// import org.apache.commons.cli.Options;
+// import org.apache.commons.cli.ParseException;
 
-public class SimpleCurl2 {
-    Options options;
-
-
-    public SimpleCurl2() {
-        options = new Options();
+// public class SimpleCurl2 {
+//     Options options;
 
 
-        options.addOption("v", false, "verbose, 요청, 응답 헤더를 출력한다.");
-        options.addOption(
-                Option.builder("H").hasArg().argName("line").desc("임의의 헤더를 서버로 설정한다. ").build());
-        options.addOption(Option.builder("d").hasArg().argName("dara")
-                .desc("POST, UT 등에 데이터를 전송한다.").build());
-        options.addOption(Option.builder("X").hasArg().argName("command")
-                .desc("사용할 method를 지정ㅎ나다. 지정되지 않은 경우, 기본값은 GET").build());
-        options.addOption(Option.builder(("L")).desc("서버의 응답이 30x 계열이면 다음 응답을 따라 간다. ").build());
-        options.addOption(Option.builder("F").hasArgs().argName("name=content").valueSeparator('=')
-                .desc(" multipart/form-data를 구성하여 전송한다. content 부분에 @filename을 사용할 수 있다.").build());
-        options.addOption("h",false,"사용법을 출력한다.");
-    }
+//     public SimpleCurl2() {
+//         options = new Options();
 
-    public CommandLine setOption(String[] args) throws ParseException {
-        CommandLineParser parser = new DefaultParser();
-        CommandLine commandLine = parser.parse(options, args);
-        return parser.parse(options, args);
 
-        if(CommandLine.hasOption("h")){
-            showHelp();
-            System.exit(0);
-        }
+//         options.addOption("v", false, "verbose, 요청, 응답 헤더를 출력한다.");
+//         options.addOption(
+//                 Option.builder("H").hasArg().argName("line").desc("임의의 헤더를 서버로 설정한다. ").build());
+//         options.addOption(Option.builder("d").hasArg().argName("dara")
+//                 .desc("POST, UT 등에 데이터를 전송한다.").build());
+//         options.addOption(Option.builder("X").hasArg().argName("command")
+//                 .desc("사용할 method를 지정ㅎ나다. 지정되지 않은 경우, 기본값은 GET").build());
+//         options.addOption(Option.builder(("L")).desc("서버의 응답이 30x 계열이면 다음 응답을 따라 간다. ").build());
+//         options.addOption(Option.builder("F").hasArgs().argName("name=content").valueSeparator('=')
+//                 .desc(" multipart/form-data를 구성하여 전송한다. content 부분에 @filename을 사용할 수 있다.").build());
+//         options.addOption("h",false,"사용법을 출력한다.");
+//     }
 
-        if(CommandLine.hasOption("X")){
-            method = commandLine.getOptionValue("X");
-        }
-    }
+//     public CommandLine setOption(String[] args) throws ParseException {
+//         CommandLineParser parser = new DefaultParser();
+//         CommandLine commandLine = parser.parse(options, args);
+//         return parser.parse(options, args);
 
-    public void showHelp() {
-        HelpFormatter formatter = new HelpFormatter();
-        formatter.setOptionComparator(null);
-        formatter.printHelp("scurl", options);
-    }
+//         if(CommandLine.hasOption("h")){
+//             showHelp();
+//             System.exit(0);
+//         }
 
-    public static void main(String[] args) {
-        SimpleCurl scurl = new SimpleCurl();
+//         if(CommandLine.hasOption("X")){
+//             method = commandLine.getOptionValue("X");
+//         }
+//     }
 
-        try {
-            CommandLine commandLine = scurl.setOption(args);
+//     public void showHelp() {
+//         HelpFormatter formatter = new HelpFormatter();
+//         formatter.setOptionComparator(null);
+//         formatter.printHelp("scurl", options);
+//     }
 
-            if (commandLine.hasOption("h")) {
-                scurl.showHelp();
-            }
+//     public static void main(String[] args) {
+//         SimpleCurl scurl = new SimpleCurl();
 
-        } catch (Exception e) {
-            scurl.showHelp();
-        }
+//         try {
+//             CommandLine commandLine = scurl.setOption(args);
 
-    }
+//             if (commandLine.hasOption("h")) {
+//                 scurl.showHelp();
+//             }
 
-}
+//         } catch (Exception e) {
+//             scurl.showHelp();
+//         }
+
+//     }
+
+// }
 
 
