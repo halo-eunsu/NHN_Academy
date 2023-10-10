@@ -5,8 +5,6 @@ public abstract class Node {
     String id;
     String name = "";
 
-    
-    
 
 
     //최소 protected private는 안됨
@@ -14,6 +12,13 @@ public abstract class Node {
         //고유번호 생성
         this(String.valueOf(System.currentTimeMillis()));
     }
+
+    protected Node(String id){
+        this.id = id;
+    }
+
+
+
 
 
     public String getId() {
