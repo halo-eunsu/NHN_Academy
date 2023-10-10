@@ -9,8 +9,12 @@ public abstract class Message {
         this(String.valueOf(System.currentTimeMillis()) + (++count));
     }
 
-    protected Message (){
-        
+    protected Message (String id){
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
     
 }
