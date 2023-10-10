@@ -3,16 +3,16 @@ package com.nhnacademy;
 public abstract class Node {
     
     String id;
-    String name;
+    String name = "";
 
     
     
 
 
     //최소 protected private는 안됨
-    protected Node(String id){
+    protected Node(){
         //고유번호 생성
-        this.id = String.valueOf(System.currentTimeMillis());
+        this(String.valueOf(System.currentTimeMillis()));
     }
 
 
