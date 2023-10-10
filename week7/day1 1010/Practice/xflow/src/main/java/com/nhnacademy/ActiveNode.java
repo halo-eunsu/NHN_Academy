@@ -4,9 +4,11 @@ public class ActiveNode extends Node implements Runnable {
 
     Thread thread;
     int interval = 1;
+    boolean stopped = true;
 
     protected ActiveNode() {
         super();
+        thread = new Thread(this);
     }
 
     protected ActiveNode(String id) {
@@ -35,6 +37,14 @@ public class ActiveNode extends Node implements Runnable {
         thread.start();
     }
 
+    public void stop(){
+        
+        stopped = true;
+        thread.interrupt();
+
+    }
+    //맞는가?
+
     protected void postprocess() {
 
     }
@@ -45,7 +55,8 @@ public class ActiveNode extends Node implements Runnable {
 
     // 살아있는 동안 도세요...
     public boolean isAlive() {
-        return !thread.isInterrupted();
+        //return !thread.isInterrupted();
+        return !stopped;
     }
 
 
@@ -59,7 +70,8 @@ public class ActiveNode extends Node implements Runnable {
                 main();
                 Thread.sleep(interval);
             } catch (Exception e) {
-                Thread.currentThread().interrupt();
+                //Thread.currentThread().interrupt();
+                stop();
             }
 
         }
