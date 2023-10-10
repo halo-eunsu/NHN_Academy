@@ -3,7 +3,7 @@ package com.nhnacademy;
 public class ActiveNode extends Node implements Runnable {
 
     Thread thread;
-    
+
     protected ActiveNode() {
         super();
     }
@@ -28,13 +28,13 @@ public class ActiveNode extends Node implements Runnable {
 
     }
 
-    protected void mainprocess(){
+    protected void mainp(){
 
     }
 
     //살아있는 동안 도세요...
     public boolean isAlive(){
-        return false;
+        return !thread.isInterrupted();
     }
 
 
@@ -44,7 +44,7 @@ public class ActiveNode extends Node implements Runnable {
         
         preprocess();
         while(isAlive()){
-            mainprocess();
+            main();
         }
         postprocess();
     }
