@@ -6,7 +6,6 @@ public abstract class Node {
     String name = "";
 
 
-
     //최소 protected private는 안됨
     protected Node(){
         //고유번호 생성
@@ -16,7 +15,6 @@ public abstract class Node {
     protected Node(String id){
         this.id = id;
     }
-
 
     public String getId() {
         return id;
@@ -29,10 +27,6 @@ public abstract class Node {
     public void setName(String name) {
         this.name = name;
     }
-
-
-
-
 
     
 }
