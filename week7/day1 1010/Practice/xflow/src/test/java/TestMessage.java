@@ -18,7 +18,7 @@ public class TestMessage extends Message{
         TestMessage message = new TestMessage();
 
         assertNotNull(message.getId());
-        assertTrue(message.getId().length());
+        assertTrue(message.getId().length() > 0);
 
     }
 }
