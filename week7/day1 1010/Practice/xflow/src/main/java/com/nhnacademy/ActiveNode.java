@@ -2,6 +2,7 @@ package com.nhnacademy;
 
 public class ActiveNode extends Node implements Runnable {
 
+    Thread thread;
     
     protected ActiveNode() {
         super();
