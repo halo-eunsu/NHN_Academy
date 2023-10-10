@@ -53,11 +53,15 @@ public class TestNode extends Node {
     @Test
         void nameTest() {
             final String name = "first node.";
-            TestNode node = new TestNode();
 
+            StringBuilder builder = new StringBuilder();
+
+            TestNode node = new TestNode();
+            builder.append(name);// builder의 Test 방법 질문
             
             node.setName((name));
             assertEquals(name, node.getName());
+            assertEquals(builder.toString(), node.getName());
         }
 
 }

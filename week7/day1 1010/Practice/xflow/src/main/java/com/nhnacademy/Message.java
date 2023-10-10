@@ -1,5 +1,16 @@
 package com.nhnacademy;
 
-public class Message {
+public abstract class Message {
+
+    static int count;
+    String id;
+
+    protected Message() { 
+        this(String.valueOf(System.currentTimeMillis()) + (++count));
+    }
+
+    protected Message (){
+        
+    }
     
 }
