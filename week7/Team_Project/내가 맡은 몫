@@ -1,0 +1,43 @@
+접속 관리
+
+연결 host 정보(IP address, Port, 접속 시간)
+
+블랙 리스트 관리(등록, 삭제, 보기)
+
+
+Node 구성
+Input Node
+
+Standard In Node - stdin으로 들어오는 데이터를 flow 메시지로 만들어 flow에 넣는다.
+
+Socket In Node - socket에서 들어오는 데이터를 flow message로 만들어 flow에 넣는다.
+
+Output Node
+
+Stadnard Out Node - Flow에서 처리된 결과를 stdout으로 출력한다.
+
+Socket Out Node - Flow에서 처리된 결과를 socket으로 내보낸다.
+
+Process Node
+
+HTTP Client Node - 설정으로 지정된 host에 연결하고, 연동되어 있는 socket in node와 socket out node를 통해 서버와 통신한다.
+
+HTTP Server Node - Client가 연결되면, 연동되어 있는 socket in node와 socket out node를 통해 client와 통신한다.
+
+Filter Node - Message의 데이터를 분석하여 통과시키거나 버린다.
+
+Predicate Node - Message의 결과를 조건식에 맞춰 true/false를 결정한다.
+
+Selection Node - 특정 message를 특정 출력 port로 내보낸다.
+
+Trace Node
+
+출력을 로그로 보낼 수 있다.
+
+Exception을 처리할 수 있다.
+
+Extra Node
+
+서비스 구현에 필요하다 판단되는 기능의 node를 구현한다.
+
+

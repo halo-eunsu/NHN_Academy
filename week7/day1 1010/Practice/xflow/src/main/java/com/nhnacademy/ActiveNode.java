@@ -5,6 +5,7 @@ public class ActiveNode extends Node implements Runnable {
     Thread thread;
     int interval = 1;
     boolean stopped = true;
+    String  status = "stopped";
 
     protected ActiveNode() {
         super();
@@ -29,7 +30,8 @@ public class ActiveNode extends Node implements Runnable {
 
     // run 구조
     protected void preprocess() {
-
+        status = "preprocess";
+        stopped = false;
     }
 
     public void start() {
@@ -46,7 +48,8 @@ public class ActiveNode extends Node implements Runnable {
     //맞는가?
 
     protected void postprocess() {
-
+        stopped = false;
+        status = "postprocess";
     }
 
     protected void main() {
