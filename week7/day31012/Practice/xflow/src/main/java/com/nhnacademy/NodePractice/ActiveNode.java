@@ -14,4 +14,7 @@ public class ActiveNode extends Node {
         setName(name);
 
     }
+
+
+    
 }
