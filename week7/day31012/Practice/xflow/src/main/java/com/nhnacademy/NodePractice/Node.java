@@ -4,7 +4,7 @@ public class Node {
     
 
     int id;
-    int name;
+    String name;
     static int count;
 
     public int getTotalCount() {
@@ -19,11 +19,11 @@ public class Node {
         return id;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
     
