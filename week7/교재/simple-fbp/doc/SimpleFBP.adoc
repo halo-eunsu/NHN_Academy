@@ -26,13 +26,13 @@ image::image/node_hierachy.svg[title="Node Hierachy",align=center]
 
 {empty} + 
 
-**Port**
+**Wire**
 
 * Node간 message전달을 위해 사용된다.
 * 하나 이상의 message를 보관할 수도 있다.
 * 새로운 message가 들어오면, 전달할 node에게 이를 알릴 수 있다.
 
-image::image/port_hierachy.svg[title="Port Hierachy",align=center]
+image::image/wire_hierachy.svg[title="Port Hierachy",align=center]
 
 {empty} + 
 
@@ -265,12 +265,12 @@ public abstract class Message {
   
   public String getId() {...}
   public long getCreationTime() {...}
-}
+} 
 ----
 
 {empty} +
 
-== Port class
+== Wire class
 
 **특징**
 
@@ -290,7 +290,7 @@ image::./image/message_transfer.svg[title="메시지 전송"]
 ^s|Class Variable
 ^s|외부 참조
 ^s|변경
-^s|설명
+^s|설명 
 
 ^s|count
 ^|예
@@ -311,18 +311,18 @@ image::./image/message_transfer.svg[title="메시지 전송"]
 |입력되는 message를 저장하고, 요청시 먼저 입력된 message를 반환하기 위해 message를 저장하는 data structure object
 |===
 
-=== Exam-04. Node간 메시지 전달을 위한 Port class를 구현하라.
+=== Exam-04. Node간 메시지 전달을 위한 Wire class를 구현하라.
 
 {empty} + 
 
 [source,java]
 ----
-public class Port {
+public class Wire {
     static int count;
     String id;
     Queue<Message> queue;
 
-    public Port() {
+    public Wire() {
     }
 
     public void put(Message message) {
@@ -345,11 +345,15 @@ public class Port {
 [source,java]
 ----
 public abstract class InputNode extends ActiveNode {
-    final Port [] peerPorts;
+    Wire[] wires;
 
     InputNode(int count) {...}
 
-    public void connect(int index, Port port) {...}
+    public void connectOutputWire(int index, Wire wire) {...}
+
+    public int getOutputWireCount() {...}
+
+    public Wire getOutputWire(int index) {...}
 
     void output(Message message) {...}
 }
@@ -364,13 +368,15 @@ public abstract class InputNode extends ActiveNode {
 [source,java]
 ----
 public abstract class OutputNode extends ActiveNode {
-    Port [] ports;
+    Wire [] wires;
 
     OutputNode(int count) {...}
 
-    public int getInputPortCount() {...}
+    public void connectInputWire(int index, Wire wire) {...}
 
-    public Port getInputPort(int index) {...}
+    public int getInputWireCount() {...}
+
+    public Wire getInputWire(int index) {...}
 }
 ----
 
@@ -384,16 +390,22 @@ public abstract class OutputNode extends ActiveNode {
 ----
 public abstract class InputOutputNode extends ActiveNode {
 
-    final Port [] ports;
-    final Port [] peerPorts;
+    Wire [] inputWires;
+    Wire [] outputWires;
 
     InputOutputNode(int inputCount, int outputCount) {...}
 
-    public void connect(int index, Port port) {...}
+    public void connectInputWire(int index, Wire wire) {...}
 
-    public int getInputPortCount() {...}
+    public void connectOutputWire(int index, Wire wire) {...}
 
-    public Port getInputPort(int index) {...}A
+    public int getInputWireCount() {...}
+
+    public Wire getInputWire(int index) {...}A
+
+    public int getOutputWireCount() {...}
+
+    public Wire getOutputWire(int index) {...}A
 
     void output(Message message) {...}
 }
@@ -501,16 +513,21 @@ public class TestAddNode {
     public static void main(String[] args) {
         TimerNode inNode1 = new TimerNode(1000);
         TimerNode inNode2 = new TimerNode(1000);
-        addNode2 addNode = new addNode2();
+        AddNode addNode = new AddNode();
+        TerminalOutNode terminalNode = new TerminalOutNode();
 
-        TerminalOutNode2 outNode = new TerminalOutNode2();
+        Wire wire1 = new BufferedWire();
+        Wire wire2 = new BufferedWire();
+        Wire wire3 = new BufferedWire();
 
-        inNode1.connect(0, addNode.getInputPort(0));
-        inNode2.connect(0, addNode.getInputPort(1));
+        inNode1.connectOutputWire(0, wire1);
+        inNode2.connectOutputWire(0, wire2);
+        addNode.connectInputWire(0, wire1);
+        addNode.connectInputWire(1, wire2);
+        addNode.connectOutputWire(0, wire3);
+        terminalNode.connectInputWire(0, wire3);
 
-        addNode.connect(0, outNode.getInputPort(0));
-
-        outNode.start();
+        terminalNode.start();
         addNode.start();
         inNode2.start();
         inNode1.start();
@@ -522,43 +539,9 @@ public class TestAddNode {
 
 === Exam-12. 빼기를 위한 SubtractNode class를 구현해 보자.
 
-[source,java]
-----
-public class SubtractNode extends InputOutputNode {
-    public SubtractNode() {...}
-
-    @Override
-    void perform() {... }
-}
-----
-
-{empty} +
-
 === Exam-13. 곱하기를 위한 MultiplyNode class를 구현해 보자.
 
-[source,java]
-----
-public class MultiplyNode extends InputOutputNode {
-    public MultiplyNode() {...}
-
-    @Override
-    void perform() {... }
-}
-----
-
-{empty} +
-
 === Exam-14. 나누기를 위한 DivideNode class를 구현해 보자.
-
-[source,java]
-----
-public class DivideNode extends InputOutputNode {
-    public DivideNode() {...}
-
-    @Override
-    void perform() {... }
-}
-----
 
 {empty} +
 
@@ -570,24 +553,38 @@ import com.nhnacademy.node.*;
 
 public class TestArithmeticOperations {
     public static void main(String[] args) {
-        TimerNode v1 = new TimerNode(1, Mode.COUNT);
-        TimerNode v2 = new TimerNode(1, Mode.COUNT);
-        TimerNode v3 = new TimerNode(1, Mode.COUNT);
-        TimerNode v4 = new TimerNode(1, Mode.COUNT);
+        TimerNode v1 = new TimerNode(1, TimerNode.Mode.COUNT);
+        TimerNode v2 = new TimerNode(1, TimerNode.Mode.COUNT);
+        TimerNode v3 = new TimerNode(1, TimerNode.Mode.COUNT);
+        TimerNode v4 = new TimerNode(1, TimerNode.Mode.COUNT);
         AddNode addNode = new AddNode();
         SubtractNode subtractNode = new SubtractNode();
         MultiplyNode multiplyNode = new MultiplyNode();
-
         TerminalOutNode outNode = new TerminalOutNode();
 
-        v1.connect(0, addNode.getInputPort(0));
-        v2.connect(0, addNode.getInputPort(1));
-        v3.connect(0, subtractNode.getInputPort(0));
-        v4.connect(0, subtractNode.getInputPort(1));
+        Wire wire1 = new BufferedWire();
+        Wire wire2 = new BufferedWire();
+        Wire wire3 = new BufferedWire();
+        Wire wire4 = new BufferedWire();
+        Wire wire5 = new BufferedWire();
+        Wire wire6 = new BufferedWire();
+        Wire wire7 = new BufferedWire();
 
-        addNode.connect(0, multiplicationNode.getInputPort(0));
-        subtractNode.connect(0, multiplicatNode.getInputPort(1));
-        multiplyNode.connect(0, outNode.getInputPort(0));
+        v1.connectOutputWire(0, wire1);
+        v2.connectOutputWire(0, wire2);
+        addNode.connectInputWire(0, wire1);
+        addNode.connectInputWire(1, wire2);
+        v3.connectOutputWire(0, wire3);
+        v4.connectOutputWire(0, wire4);
+        subtractNode.connectInputWire(0, wire3);
+        subtractNode.connectInputWire(1, wire4);
+
+        addNode.connectOutputWire(0, wire5);
+        multiplicationNode.connectInputWire(0, wire5);
+        subtractNode.connectOutputWire(0, wire6);
+        multiplicatNode.connectInputWire(1, wire6);
+        multiplyNode.connectOutputWire(0, wire7);
+        outNode.connectInputWire(0, wire7);
 
         outNode.start();
         addNode.start();
@@ -717,13 +714,13 @@ import com.nhnacademy.wire.Wire;
 
 public class TestMessageServerNode {
     public static void main(String[] args) {
-        TimerNode v1 = new TimerNode(1, Mode.COUNT);
-        TimerNode v2 = new TimerNode(1, Mode.COUNT);
-        TimerNode v3 = new TimerNode(1, Mode.COUNT);
-        TimerNode v4 = new TimerNode(1, Mode.COUNT);
-        AddNode addNode = new AddNode(2, 1);
-        SubtractNode subtractNode = new SubtractNode(2, 1);
-        MultiplyNode multiplyNode = new MultiplyNode(2, 1);
+        TimerNode v1 = new TimerNode(1, TimerNode.Mode.COUNT);
+        TimerNode v2 = new TimerNode(1, TimerNode.Mode.COUNT);
+        TimerNode v3 = new TimerNode(1, TimerNode.Mode.COUNT);
+        TimerNode v4 = new TimerNode(1, TimerNode.Mode.COUNT);
+        AddNode addNode = new AddNode();
+        SubtractNode subtractNode = new SubtractNode();
+        MultiplyNode multiplyNode = new MultiplyNode();
 
         TerminalOutNode outNode = new TerminalOutNode();
         Wire wire1 = new Wire();

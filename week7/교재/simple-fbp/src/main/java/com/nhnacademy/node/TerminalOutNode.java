@@ -9,7 +9,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class TerminalOutNode extends OutputNode {
     public TerminalOutNode() {
-        this(1);
+        super(1);
+    }
+
+    public TerminalOutNode(String name) {
+        super(name, 1);
     }
 
     public TerminalOutNode(int count) {
@@ -23,16 +27,18 @@ public class TerminalOutNode extends OutputNode {
 
     @Override
     void process() {
-        for (int i = 0; i < getInputCount(); i++) {
-            if (getInput(i).hasMessage()) {
+        for (int i = 0; i < getInputWireCount(); i++) {
+            if (getInputWire(i).hasMessage()) {
                 log.trace("Message : {}", i);
 
-                Message message = getInput(i).get();
+                Message message = getInputWire(i).get();
 
                 if (message instanceof StringMessage) {
                     System.out.println(((StringMessage) message).getPayload());
                 } else if (message instanceof LongMessage) {
                     System.out.println(((LongMessage) message).getPayload());
+                } else {
+                    System.out.println(message.toString());
                 }
 
             }

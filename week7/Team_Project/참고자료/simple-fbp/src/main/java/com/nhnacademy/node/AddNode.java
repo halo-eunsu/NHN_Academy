@@ -1,30 +1,23 @@
 package com.nhnacademy.node;
 
 import com.nhnacademy.message.LongMessage;
-import com.nhnacademy.message.Message;
 
-public class AddNode extends InputOutputNode {
-    public AddNode(int inCount, int outCount) {
-        super(inCount, outCount);
+public class AddNode extends BinaryOperationNode {
+    public AddNode() {
+        super();
+    }
+
+    public AddNode(String name) {
+        super(name);
     }
 
     @Override
     void process() {
-        boolean accept = true;
+        if (((getInputWire(0) != null) && (getInputWire(0).hasMessage()))
+                && ((getInputWire(1) != null) && (getInputWire(1).hasMessage()))) {
 
-        for (int i = 0; i < getInputPortCount(); i++) {
-            accept = accept && getInputPort(i).hasMessage();
-        }
-
-        if (accept) {
-            long sum = 0;
-
-            for (int i = 0; i < getInputPortCount(); i++) {
-                Message message = getInputPort(i).get();
-                if (message instanceof LongMessage) {
-                    sum += ((LongMessage) message).getPayload();
-                }
-            }
+            long sum = ((LongMessage) getInputWire(0).get()).getPayload()
+                    + ((LongMessage) getInputWire(1).get()).getPayload();
 
             output(new LongMessage(sum));
         }
