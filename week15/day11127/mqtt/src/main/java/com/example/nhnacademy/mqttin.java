@@ -31,6 +31,7 @@ public class mqttin {
         publisher.publish("data", message);
         String application_name = "application";
         publisher.subscribe(application_name + "/#", (topic, msg) -> {
+            
             String[] topics = topic.split("/");
             String[] sensors = { "temperature", "humidity" };
             List<String> sensorList = Arrays.asList(sensors);
@@ -56,6 +57,8 @@ public class mqttin {
                     }
                 }
                 // }
+
+                
             }
         });
         while (!Thread.currentThread().isInterrupted()) {
