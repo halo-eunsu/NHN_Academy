@@ -33,6 +33,21 @@ public class SimpleMB {
         
     }
 
+    public static byte[] makeReadHoldingRegisterRequest(int address, int[] registers) { 
+        byte[] frame = new byte[1 + 1 + registers.length * 2];
+
+
+        //PDU의 funciton Code 
+        frame[0] = 0x03;
+
+        // length
+        frame[1] = (byte) (registers.length * 2);
+
+        for(int i = 0; i < registers.length; i++){
+            frame[ 2 + i * 2] = (byte) registers[i]
+        }
+
+    }
 
     public static byte[] addMBAP(int transactionId, int unitId, byte[] pdu){
 
