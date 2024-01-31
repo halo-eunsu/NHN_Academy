@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../tig2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day1 1030/1030-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day1 1030/class-data_science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day2 1031/1031-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day3 1101/class-data_science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day3 1101/class-relational_database" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day3 1101/이전 버전/class-data_science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day3 1101/이전 버전/class-data_science_01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day4 1102/1102-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day4 1102/class-data_science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day4 1102/hashing-alpabet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day5 1103/class-data_science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/day5 1103/이전것/class-data_science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week10/교재/class-data_science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week13/day2 1115/1115-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week13/day3 1116/1116-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day1_1120/tig2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/1121-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/jdbc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/tig2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/교재/iot_platform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/교재/java-servlet-jsp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/day2_1121/교재/web-frontend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week14/tig2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week15/Team-project/mini-teamproject-iot-gateway-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week15/day11127/1127-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week15/day41201/mini-teamproject-iot-gateway-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week15/교재/simple-fbp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week16/Team_Project/mini-teamproject-iot-gateway-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week16/Team_Project/modbus_example" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week16/day1 1204/1204-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week17/1211-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week17/Team_Project/iot-packet-process" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week17/mini-teamproject-iot-gateway-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week18/day4_1221/1221-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week18/day4_1221/project/iot-packet-process" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day3/backup/algorithm-gn-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day3/backup/backup_log/1/algorithm-gn-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day3/backup/backup_log/1/nhn-academy-dev-settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day3/backup/nhn-academy-dev-settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day4/algorithm-gn-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day4/nhn-academy-dev-settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day5/Problem_Pack/nhnmart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day5/Weekend_Problem/nhnmart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day5/algorithm-gn-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week2/day5/nhn-academy-dev-settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day1/Problem/algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day1/thread" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day2/Problems/0912-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day2/Problems/PCSolution01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day2/교재/thread" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day3/Problems/0913-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day3/Solutions/1/simple-fbp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day3/Solutions/simple-fbp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day3/Tryouts/simple-fbp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day4 0914/0914-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day4 0914/Solution/simple-fbp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day5 0915/0915-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week3/day5 0915/Problems/nhnmart-thread" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/Weekend_Problem/tictactoe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day1 0918/0918-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day1 0918/backup/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day1 0918/nhnmart-thread" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day1 0918/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day2 0919/0919-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day2 0919/simplenetcat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day3 0920/Practice/0920-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day3 0920/Practice/chat-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day3 0920/Practice/chat-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day3 0920/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day3 0920/교재/오늘자/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day4 0921/0921-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day4 0921/교재/command-line-arguments" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day4 0921/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day4 0921/교재/json" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/day5 0922/0922-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/교재/command-line-arguments" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week4/교재/json" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week5/day1 0925/Practice/0925-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week5/day2 0926/Practice/0926-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week5/day2 0926/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week5/day3 0927/0927-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week5/day3 0927/Practice/simple-curl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week5/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week5/교재/구버전/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day1 1004/1004-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day1 1004/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day2 1005/1005-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-curl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-httpd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day3 1006/1006-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day3 1006/pre/1006-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day3 1006/simple-curl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/day3 1006/simple-httpd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week6/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/FbpProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/Team_Project/Test/MergeTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/Team_Project/xFlow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/Team_Project/참고자료/mini-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/day1 1010/1005-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/day1 1010/1010-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/day1 1010/simple-curl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/day1 1010/simple-httpd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/day31012/1012-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/day41013/1013-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/교재/java-network-programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/교재/mini-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week7/교재/simple-fbp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/Weekend_Project/movie-crawling" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/day1 1016/1016-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/day1 1016/class-environment_settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/day2 1017/1017-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/day3 1018/1018-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/day4 1019/1019-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/day5 1020/1020-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week8/교재/class-python_programming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week9/1023-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week9/Weekend_project/math-python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week9/day2 1024/1024-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week9/day3 1025/1025-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../week9/day5 1027/1027-algorithm" vcs="Git" />
+  </component>
+</project>

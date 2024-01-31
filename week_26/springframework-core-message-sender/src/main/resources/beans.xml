@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="englishGreeter" class="com.nhnacademy.edu.springframework.KoreanGreeter" >
+    </bean>
+
+    <bean id="koreanGreeter" class="com.nhnacademy.edu.springframework.EnglishGreeter" >
+    </bean>
+
+
+    <bean id="sendEmailMessage" class="com.nhnacademy.edu.springframework.MessageSender.sendEmailMessage" >
+    </bean>
+
+    <bean id="sendSmsMessage" class="com.nhnacademy.edu.springframework.MessageSender.sendSmsMessage" >
+    </bean>
+
+    <bean id="user" class="com.nhnacademy.edu.springframework.MessageSender.User" >
+    </bean>
+
+
+    <bean id="englishGreeter2" class="com.nhnacademy.edu.springframework.practice.practice03.EnglishGreeter"  scope="singleton">
+    </bean>
+
+    <bean id="koreanGreeter2" class="com.nhnacademy.edu.springframework.practice.practice03.KoreanGreeter" scope="prototype">
+    </bean>
+
+
+
+    <bean id="englishGreeter3" class="com.nhnacademy.edu.springframework.practice.practice04.EnglishGreeter" destroy-method="destroy">
+
+
+
+</beans>

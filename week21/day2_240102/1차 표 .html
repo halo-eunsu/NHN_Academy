@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>이력서</title>
+    <style>
+        body {
+            font-family: "Malgun Gothic", sans-serif;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background-color: #f9f9f9;
+            table-layout: fixed;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .title-row th {
+            background-color: transparent;
+            border-bottom: 3px solid black;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .info-title {
+            background-color: #f2f2f2;
+        }
+
+        .info-content {
+            background-color: #ffffff;
+        }
+
+        .image-column {
+            width: 20%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- Title Row -->
+        <tr class="title-row">
+            <th class="image-column" colspan="3" rowspan="6">
+                <img alt="Profile Image" src="/mnt/data/image.png" />
+            </th>
+            <th colspan="4">이력서</th>
+        </tr>
+        <!-- Header and Content Rows -->
+        <tr>
+            <td class="info-title">이름</td>
+            <td class="info-content">이소산</td>
+            <td class="info-title">나이</td>
+            <td class="info-content">54세</td>
+        </tr>
+        <tr>
+            <td class="info-title">주소</td>
+            <td class="info-content">서울특별시 종로구 18길 19</td>
+            <td class="info-title">호주</td>
+            <td class="info-content">양반 홍길동에 1손</td>
+        </tr>
+        <tr>
+            <td class="info-title">번지</td>
+            <td class="info-content">조선 한양부 간직동</td>
+            <td class="info-title">이메일</td>
+            <td class="info-content">soonsoon@gtrail.com</td>
+        </tr>
+        <tr>
+            <td class="info-title">전화번호</td>
+            <td class="info-content">031-333-2222</td>
+            <td class="info-title">가족관계</td>
+            <td class="info-content">아내, 아들 넷 </td>
+        </tr>
+        <tr>
+            <td class="info-title">주민등록번호</td>
+            <td class="info-content">450418-1122916</td>
+            <td class="info-title">연락처</td>
+            <td class="info-content">010-2031-0293</td>
+        </tr>
+    </table>
+</body>
+
+</html>

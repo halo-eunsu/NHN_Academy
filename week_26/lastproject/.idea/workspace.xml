@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f72861f-128a-4acf-9004-19630d900ded" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice03/EnglishGreeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice03/Greeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice03/KoreanGreeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice03/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice04/EnglishGreeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice04/Greeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice04/KoreanGreeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice04/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/practice/practice04/ScopeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tig2" beforeDir="false" afterPath="$PROJECT_DIR$/../../tig2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tig2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../tig2/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tig2/etc/telegraf/telegraf.d/site.site.lora.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../tig2/etc/telegraf/telegraf.d/site.site.lora.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week10/day2 1031/1031-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week10/day2 1031/1031-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week10/day2 1031/1031-algorithm/src/main/java/com/nhnacademy/aiot/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week10/day2 1031/1031-algorithm/src/main/java/com/nhnacademy/aiot/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week10/day3 1101/이전 버전/class-data_science" beforeDir="false" afterPath="$PROJECT_DIR$/../../week10/day3 1101/이전 버전/class-data_science" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week10/day3 1101/이전 버전/class-data_science/06_Data_Preprocessing/code/module06.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../week10/day3 1101/이전 버전/class-data_science/06_Data_Preprocessing/code/module06.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm/src/main/java/com/nhnacademy/aiot/HashNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm/src/main/java/com/nhnacademy/aiot/HashNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm/src/main/java/com/nhnacademy/aiot/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm/src/main/java/com/nhnacademy/aiot/MyHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm/src/test/java/com/nhnacademy/aiot/MyHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day2 1115/1113-algorithm/src/test/java/com/nhnacademy/aiot/MyHashMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day2 1115/1115-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day2 1115/1115-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day2 1115/1115-algorithm/src/main/java/com/nhnacademy/aiot/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day2 1115/1115-algorithm/src/main/java/com/nhnacademy/aiot/MyHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day3 1116/1116-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day3 1116/1116-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day3 1116/1116-algorithm/src/main/java/com/nhnacademy/aiot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day3 1116/1116-algorithm/src/main/java/com/nhnacademy/aiot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week13/day3 1116/1116-algorithm/src/main/java/com/nhnacademy/aiot/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week13/day3 1116/1116-algorithm/src/main/java/com/nhnacademy/aiot/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2/etc/influxdb/influxdb.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2/etc/influxdb/influxdb.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2/etc/telegraf/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2/etc/telegraf/telegraf.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2/etc/telegraf/telegraf.d/site.site.lora.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig2/etc/telegraf/telegraf.d/site.site.lora.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig3" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig3/etc/telegraf/telegraf.d/site.site.lora.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/day2_1121/tig 이전버전/tig3/etc/telegraf/telegraf.d/site.site.lora.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/tig2" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/tig2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/tig2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/tig2/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week14/tig2/etc/telegraf/telegraf.d/site.site.lora.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../week14/tig2/etc/telegraf/telegraf.d/site.site.lora.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week15/day11127/1127-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week15/day11127/1127-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week15/day11127/1127-algorithm/src/main/java/com/nhnacademy/aiot/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week15/day11127/1127-algorithm/src/main/java/com/nhnacademy/aiot/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week15/day11127/1127-algorithm/src/main/java/com/nhnacademy/aiot/ConsecutiveClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week15/day11127/1127-algorithm/src/main/java/com/nhnacademy/aiot/ConsecutiveClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week17/1211-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week17/1211-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week17/1211-algorithm/src/main/java/com/nhnacademy/aiot/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week17/1211-algorithm/src/main/java/com/nhnacademy/aiot/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week17/1211-algorithm/src/test/java/com/nhnacademy/aiot/ServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week17/1211-algorithm/src/test/java/com/nhnacademy/aiot/ServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week18/day1_1220/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week18/day1_1220/1220-algorithm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week18/day1_1220/class-relational_database" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week5/교재/java-network-programming" beforeDir="false" afterPath="$PROJECT_DIR$/../../week5/교재/java-network-programming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week5/교재/java-network-programming/doc/quiz/quiz-scurl.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../../week5/교재/java-network-programming/doc/quiz/quiz-scurl.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week5/교재/java-network-programming/doc/www/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../week5/교재/java-network-programming/doc/www/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week6/day1 1004/1004-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week6/day1 1004/1004-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week6/day1 1004/1004-algorithm/src/main/java/com/nhnacademy/aiot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week6/day1 1004/1004-algorithm/src/main/java/com/nhnacademy/aiot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week6/day1 1004/1004-algorithm/src/main/java/com/nhnacademy/aiot/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week6/day1 1004/1004-algorithm/src/main/java/com/nhnacademy/aiot/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-curl" beforeDir="false" afterPath="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-curl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-curl/src/main/java/com/nhnacademy/aiot/GetMessageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-curl/src/main/java/com/nhnacademy/aiot/GetMessageClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-curl/src/main/java/com/nhnacademy/aiot/ParseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week6/day2 1005/Practice/simple-curl/src/main/java/com/nhnacademy/aiot/ParseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/FbpProject" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/FbpProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/FbpProject/fbp/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/FbpProject/fbp/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/xFlow" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/Team_Project/xFlow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/xFlow/src/main/java/com/nhnacademy/ConnectionTest/HttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/Team_Project/xFlow/src/main/java/com/nhnacademy/ConnectionTest/HttpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/SimpleFBP.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/SimpleFBP2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/Arithmetic_Operation1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/MQTT_Client.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/Message_Server2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/Messsage_Server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/TCP_Client.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/TCP_Server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/active_node_state.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/fibonacci.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/message_flow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/message_transfer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/node_hierachy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/wire.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/doc/image/wire_hierachy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/exception/AlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/exception/AlreadyStartedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/exception/InvalidArgumentException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/exception/OutOfBoundsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/message/BooleanMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/message/LongMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/message/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/message/StringMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/message/TcpRequestMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/message/TcpResponseMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/ActiveNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/AddNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/BinaryOperationNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/DivideNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/InputNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/InputOutputNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/LatchNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/MultiplyNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/OutputNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/ReplicationNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/SubtractNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/TCPServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/TcpEcho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/TerminalInNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/TerminalOutNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/node/TimerNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/AddTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TerminalIOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TestArithmeticOperations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TestFibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TestJson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TestSocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TestTcpEchoServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TestUUID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/test/TickerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/wire/BufferedWire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/java/com/nhnacademy/wire/Wire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/Team_Project/참고자료/simple-fbp/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/day1 1010/simple-curl" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/day1 1010/simple-curl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/day1 1010/simple-curl/src/main/java/com/nhnacademy/aiot/GetMessageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/day1 1010/simple-curl/src/main/java/com/nhnacademy/aiot/GetMessageClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/day1 1010/simple-curl/src/main/java/com/nhnacademy/aiot/ParseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/day1 1010/simple-curl/src/main/java/com/nhnacademy/aiot/ParseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/day1 1010/simple-httpd" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/day1 1010/simple-httpd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/day1 1010/simple-httpd/src/main/java/com/nhnacademy/aiot/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/day1 1010/simple-httpd/src/main/java/com/nhnacademy/aiot/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/day41013/1013-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/day41013/1013-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week7/day41013/1013-algorithm/src/main/java/com/nhnacademy/aiot/H2O.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/day41013/1013-algorithm/src/main/java/com/nhnacademy/aiot/H2O.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week8/day2 1017/1017-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/day2 1017/1017-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week8/day2 1017/1017-algorithm/src/main/java/com/nhnacademy/aiot/BoundedBlockingQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/day2 1017/1017-algorithm/src/main/java/com/nhnacademy/aiot/BoundedBlockingQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week8/day5 1020/1020-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/day5 1020/1020-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week8/day5 1020/1020-algorithm/src/main/java/com/nhnacademy/aiot/general/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/day5 1020/1020-algorithm/src/main/java/com/nhnacademy/aiot/general/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week9/Weekend_project/math-python" beforeDir="false" afterPath="$PROJECT_DIR$/../../week9/Weekend_project/math-python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week9/Weekend_project/math-python/GeometricSequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../week9/Weekend_project/math-python/GeometricSequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week9/day3 1025/1025-algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/../../week9/day3 1025/1025-algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week9/day3 1025/1025-algorithm/src/main/java/com/nhnacademy/aiot/basic/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week9/day3 1025/1025-algorithm/src/main/java/com/nhnacademy/aiot/basic/ArrayUtils.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2bi4UUVd3geDoYtu7WMYyKoTc2S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/AIGY01-034",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/jeongeunsu/문서/NHN_git_test/NHN_Academy/week_26/lastproject/springframework-core-message-sender",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-a9dfd5e7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f72861f-128a-4acf-9004-19630d900ded" name="Changes" comment="" />
+      <created>1706684580561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706684580561</updated>
+      <workItem from="1706684581636" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

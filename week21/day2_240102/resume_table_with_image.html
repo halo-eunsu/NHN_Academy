@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>이력서</title>
+<style>
+  body {
+    font-family: "Malgun Gothic", sans-serif; /* This is a common Korean font */
+  }
+  table {
+    width: 80%; /* Adjust the table width to give space for the image */
+    border-collapse: collapse;
+    background-color: #f9f9f9; /* Light gray background similar to the image */
+    table-layout: fixed;
+    font-size: 20px; /* Larger font size for readability */
+    margin-right: 20px; /* Add margin to the right of the table for spacing */
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 12px; /* Adjust padding to better match the image */
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2; /* Header cells have a slightly darker background */
+    font-weight: bold;
+  }
+  .title-row th {
+    background-color: transparent; /* The title cell has a transparent background */
+    border-bottom: 3px solid black; /* Thicker bottom border for the title cell */
+    font-size: 24px; /* Larger font size for the title */
+    text-align: center;
+  }
+  .info-title {
+    background-color: #f2f2f2; /* Background for the info title cells */
+    font-weight: bold;
+  }
+  .info-content {
+    background-color: #ffffff; /* White background for the content cells */
+  }
+  .image-column {
+    width: 20%; /* Set the image column width */
+  }
+  img {
+    width: 100%; /* Make the image take up the full column width */
+    height: auto; /* Adjust the height automatically */
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <!-- Title Row -->
+  <tr class="title-row">
+    <th colspan="4">이력서</th>
+    <th rowspan="6" class="image-column"> <!-- This cell spans all the rows of the table for the image -->
+      <img src="/path/to/image.png" alt="Profile Image">
+    </th>
+  </tr>
+  <!-- Header and Content Rows -->
+  <tr>
+    <td class="info-title">이름</td>
+    <td class="info-content">이소산</td>
+    <td class="info-title">나이</td>
+    <td class="info-content">54세</td>
+  </tr>
+  <tr>
+    <td class="info-title">주소</td>
+    <td class="info-content">서울특별시 종로구 18길 19</td>
+    <td class="info-title">호주</td>
+    <td class="info-content">양반 홍길동에 1손</td>
+  </tr>
+  <tr>
+    <td class="info-title">번지</td>
+    <td class="info-content">조선 한양부 간직동</td>
+    <td class="info-title">이메일</td>
+    <td class="info-content">여전히 인사이트 없음</td>
+  </tr>
+  <tr>
+    <td class="info-title">전화번호</td>
+    <td class="info-content">031-333-2222</td>
+    <td class="info-title">가족관계</td>
+    <td class="info-content">아니, 아들 녀석</td>
+  </tr>
+  <tr>
+    <td class="info-title">주민등록번호</td>
+    <td class="info-content">450418-1122916</td>
+    <td class="info-title">연락처</td>
+    <td class="info-content">010-2031-0293</td>
+  </tr>
+</table>
+
+</body>
+</html>
