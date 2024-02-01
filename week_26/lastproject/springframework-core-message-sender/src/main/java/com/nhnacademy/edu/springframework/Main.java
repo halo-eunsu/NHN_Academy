@@ -1,5 +1,8 @@
 package com.nhnacademy.edu.springframework;
 
+import com.nhnacademy.edu.springframework.messagesender.EmailMessageSender;
+import com.nhnacademy.edu.springframework.messagesender.SmsMessageSender;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,18 +10,15 @@ public class Main {
 
         User user = new User("dsfsf@nhn.com","000-1111-2222");
         System.out.println("Hello world!");
-        main.sendEmailMessage(user, "message");
+
+        SmsMessageSender smsMessageSender;
+        EmailMessageSender emailMessageSender;
+
     }
 
 
 
-    private void sendEmailMessage(User user, String message){
-        System.out.println("SMS Message Sent to ${phoneNumber} : ${message}");
-    }
 
-    private void sendSMSMessage(User user, String message){
-        System.out.println("Email Message Sent ${email} : ${message}");
-    }
 
 
 
